@@ -27,9 +27,9 @@ envFrom:
       name: umami-password
 
 # Disable login (using Authelia for authentication)
-env:
-  - name: DISABLE_LOGIN
-    value: "1"
+umami:
+  disableLogin: "1"
+  removeDisableLoginEnv: false
 
 ingress:
   enabled: false  # Will use our main ingress
