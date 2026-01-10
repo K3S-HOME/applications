@@ -26,11 +26,6 @@ envFrom:
   - secretRef:
       name: umami-password
 
-# Disable login (using Authelia for authentication)
-umami:
-  disableLogin: "1"
-  removeDisableLoginEnv: false
-
 ingress:
   enabled: false  # Will use our main ingress
 
